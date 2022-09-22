@@ -1,0 +1,63 @@
+.Nav{
+    height: 70px;
+    background: #090b13;
+    display: flex;
+    align-items: center;
+    padding: 0 36px;
+    overflow-x: hidden;
+}
+
+.Logo{
+    width: 80px;
+
+}
+
+.NavMenu{
+    display: flex;
+    flex: 1;
+    margin-left: 25px;
+    align-items: center;
+}
+
+.NavMenu a{
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.NavMenu a img{
+    height: 20px;
+}
+
+.NavMenu a span{
+    font-size: 13px;
+    letter-spacing: 1.42px;
+    position: relative;
+}
+
+.NavMenu a span::after{
+        content: "";
+        height: 2px;
+        background: white;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: -6px;
+        opacity: 0;
+        transform-origin: left center; 
+        transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+        transform: scaleX(0);
+}
+
+.NavMenu a span:hover::after{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.UserImg{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+}
